@@ -12,8 +12,8 @@ export default async function handler(req, res) {
     
     // Securely access the API key from environment variables
     const apiKey = process.env.GOOGLE_AI_API_KEY;
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:generateContent?key=${apiKey}`;
-    
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-image-preview:predict?key=${apiKey}`;
+
     const payload = {
         instances: [{ prompt: prompt }],
         parameters: { "sampleCount": 1 }
