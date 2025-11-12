@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     const payload = {
         instances: [{ prompt: prompt }],
         parameters: { "sampleCount": 1,
-                      "aspectRatio": "3:4" 
+                      "aspectRatio": "2:3" 
          }
     };
 
